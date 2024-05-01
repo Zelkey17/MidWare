@@ -1,0 +1,22 @@
+'''
+
+The game
+
+'''
+
+first: overld,empty;
+
+overld (1,1) -> first {
+    return with $1 -> @ret;
+}
+
+
+main: local, entry{
+    "1233","456" -> first;
+    @ret -> write;
+}
+
+
+
+
+

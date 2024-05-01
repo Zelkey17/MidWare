@@ -1,0 +1,40 @@
+
+'''
+
+    standard types and functions
+
+'''
+
+struct int {
+    var a: 4;
+}
+
+struct long {
+    var a: 8;
+}
+
+struct short {
+    var a: 2;
+}
+
+struct byte {
+    var a:1 ;
+}
+
+struct char {
+    var a: 1;
+}
+
+struct empty {
+    var a: 0;
+}
+
+struct vector {
+    var data: 4;
+    var sz: 8;
+}
+
+f:local, ssize(0x345678), default=0;{
+}
+
+
