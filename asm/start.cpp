@@ -15,6 +15,14 @@ std::stringstream __start(const std::string& entry_name){
     ans<<R"(
 .text
 .global _start
+__not_implemented_msg:
+    .string "not implemented\n"
+__not_implemented:
+    mov $1, %rax
+    mov $2, %rdi
+    mov $__not_implemented_msg, %rsi
+    mov $16, %rdx
+    syscall
 exit:
     movq $60, %rax
     syscall

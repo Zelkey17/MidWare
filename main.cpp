@@ -15,8 +15,6 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-
-    //freopen("log.out","w",stdout);
     Semantic sem;
     sem.main("../example.wdr");
 
