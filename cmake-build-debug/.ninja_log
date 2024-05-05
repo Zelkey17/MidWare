@@ -48,3 +48,16 @@
 8	630	1714911554882132494	CMakeFiles/Midware.dir/asm/exprs.cpp.o	2134e2b95fd84ef0
 7	1802	1714911556054292503	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
 1802	1908	1714911556158306850	Midware	c3bdc80a17ca2cca
+14	1054	1714928781604798635	CMakeFiles/Midware.dir/Generating/Semantic_reader.cpp.o	e260c27583d12734
+13	1573	1714928782124812014	CMakeFiles/Midware.dir/Semantic/Semantic.cpp.o	757f802a2fc373be
+12	1947	1714928782500821687	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
+8	1499	1714928790209020003	CMakeFiles/Midware.dir/Syntax/Syntax.cpp.o	40da3afb5f9b822f
+1499	1658	1714928790369024118	Midware	c3bdc80a17ca2cca
+14	1967	1714928862494880065	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
+1967	2110	1714928862634883668	Midware	c3bdc80a17ca2cca
+8	2022	1714928874935200232	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
+2022	2147	1714928875059203424	Midware	c3bdc80a17ca2cca
+7	1850	1714928888259543168	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
+1850	1950	1714928888359545742	Midware	c3bdc80a17ca2cca
+5	2198	1714929351147464426	CMakeFiles/Midware.dir/main.cpp.o	df19cea5b8d890ac
+2200	2369	1714929351323468962	Midware	c3bdc80a17ca2cca

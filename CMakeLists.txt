@@ -28,8 +28,6 @@ add_executable(Midware main.cpp
         Semantic/expression.h
         Semantic/var_data.cpp
         Semantic/var_data.h
-        df.cpp
-        df.h
         asm/vars.c
         asm/gen_switch.cpp
 
