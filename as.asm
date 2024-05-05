@@ -84,6 +84,9 @@ setup_f:
     addl %r13d, %r13d
     mov $0, %r10
 
+    cmpl %r13d, %r10d
+    je _setup_f_cont_end
+
 _setup_f_cont:
 
     push (%r14,%r10,8)
@@ -91,8 +94,7 @@ _setup_f_cont:
     inc %r10
     cmpl %r13d, %r10d
     jne _setup_f_cont
-
-
+_setup_f_cont_end:
 
     mov %rbp, %rsp
 
@@ -274,7 +276,7 @@ f:
 
 
 _start:
-     mov $9, %rax
+    mov $9, %rax
     mov $0, %rdi
     mov $0x1000, %rsi  # arg size
     mov $3, %rdx
@@ -283,9 +285,9 @@ _start:
     mov $0, %r9
     syscall
 
-    push $13234;
-    push %rax
-    push $11234
+    push %rax;
+    push $0
+    push $1123245
     call setup_f
     call resume_
 

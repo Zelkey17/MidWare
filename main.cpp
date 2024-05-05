@@ -9,16 +9,15 @@
 #include "Semantic/expression.h"
 #include "asm/_memory/_malloc.cpp"
 #include "asm/gen_switch.cpp"
-#include "asm/gen_func.cpp"
+#include "asm/start.cpp"
 
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
 
-
     //freopen("log.out","w",stdout);
     Semantic sem;
-    sem.main("lex.txt");
+    sem.main("../example.wdr");
 
 }

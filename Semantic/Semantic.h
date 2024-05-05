@@ -97,6 +97,8 @@ public:
 
     LexicalAnalysisReader* lx;
 
+    void end_func_body();
+
 private:
 
     bool _fail=false;

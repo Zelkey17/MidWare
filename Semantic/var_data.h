@@ -25,8 +25,8 @@ struct var_data{
             case TokenType::String:
                 break;
             default:
+                throw std::logic_error(lx.getToken());
                 break;
-                //throw std::logic_error(lx.getToken());
         }
         offset=0;
     }

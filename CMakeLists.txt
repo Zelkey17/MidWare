@@ -32,5 +32,8 @@ add_executable(Midware main.cpp
         df.h
         asm/vars.c
         asm/gen_switch.cpp
-        asm/start.cpp
-        asm/gen_func.cpp)
+
+        asm/gen_func.cpp
+        Generating/Semantic_reader.cpp
+        Generating/Semantic_reader.h
+        asm/exprs.cpp)

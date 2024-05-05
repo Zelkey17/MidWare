@@ -6,7 +6,7 @@ The game
 
 first: overld,empty;
 
-overld (1,1) -> first {
+overld (1,1) -> first {№
     return with $1 -> @ret;
 }
 

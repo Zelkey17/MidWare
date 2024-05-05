@@ -56,7 +56,7 @@ void Semantic::create_gl_var(const std::string &name) {
 }
 
 void Semantic::start_func(const std::string &name, spec sp) {
-    if (sp.local.has_value() && sp.local.value()) {
+    if (sp.local.value_or(false)) {
         if (func.contains(func_data{name}) ||
             local_f.top().contains(func_data{name}) ||
             vars.check(var_data{name})) {
@@ -223,4 +223,8 @@ void Semantic::error(const std::string& str) {
 
 Semantic::Semantic() {
     local_f.emplace();
+}
+
+void Semantic::end_func_body() {
+
 }

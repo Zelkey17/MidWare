@@ -80,6 +80,7 @@ struct exprToken {
             if (lx.getToken() == "!")id = 25;
             if (lx.getToken() == "$")id = 27;
         } else if (lx.getType() == TokenType::BOperator) {
+            type=0;
             if (lx.getToken() == "::")id = 0;
             if (lx.getToken() == "+=")id = 2;
             if (lx.getToken() == "+")id = 3;
@@ -241,5 +242,7 @@ struct exprToken {
     }
 
 };
+
+std::vector<exprToken> shunting_yard(const std::vector<exprToken> &expr);
 
 #endif //MIDWARE_EXPRESSION_H

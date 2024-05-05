@@ -64,6 +64,7 @@ void SyntaxAnalysis::_gl_var() {
 void SyntaxAnalysis::_func_body() {
     semantic->start_func_body();
     _scope();
+    semantic->end_func_body()
 }
 
 void SyntaxAnalysis::_indexing() {

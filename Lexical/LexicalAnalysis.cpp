@@ -296,10 +296,10 @@ Lexem LexicalAnalysis::_start(std::string *str) {
     __builtin_unreachable();
 }
 
-const std::string LexicalAnalysis::kw[] = {"for", "while", "if", "const", "import", "empty", "overld",
-                                           "return", "with", "suspend", "var", "local", "ssize", "noexcept",
+const std::string LexicalAnalysis::kw[] = {"for", "while", "if", "import", "empty", "overld",
+                                           "return", "with", "suspend", "var", "local", "ssize",
                                            "import",  "else","elif", "asm", "struct","entry",
-                                           "editable", "ranged", "in", "break", "continue", "goto","nullptr", "void", "true", "false", "undef"
+                                           "ranged", "in", "break", "continue","nullptr", "void", "true", "false", "undef"
                                            };
 
 const std::string LexicalAnalysis::sw[] = {"range", "size", "init", "del", "cmp", "less_equal", "greater_equal", "less",
