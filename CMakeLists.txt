@@ -32,6 +32,8 @@ add_executable(Midware main.cpp
         asm/gen_switch.cpp
 
         asm/gen_func.cpp
-        Generating/Semantic_reader.cpp
-        Generating/Semantic_reader.h
-        asm/exprs.cpp)
+        Generating/Semantic_writer.cpp
+        Generating/Semantic_writer.h
+        asm/exprs.cpp
+        Generating/StreamWriter.cpp
+        Generating/StreamWriter.h)

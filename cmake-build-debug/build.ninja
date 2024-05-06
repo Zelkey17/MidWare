@@ -127,12 +127,6 @@ build CMakeFiles/Midware.dir/Semantic/var_data.cpp.o: CXX_COMPILER__Midware_unsc
   OBJECT_DIR = CMakeFiles/Midware.dir
   OBJECT_FILE_DIR = CMakeFiles/Midware.dir/Semantic
 
-build CMakeFiles/Midware.dir/df.cpp.o: CXX_COMPILER__Midware_unscanned_Debug /home/ash/CLionProjects/Midware/df.cpp || cmake_object_order_depends_target_Midware
-  DEP_FILE = CMakeFiles/Midware.dir/df.cpp.o.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Midware.dir
-  OBJECT_FILE_DIR = CMakeFiles/Midware.dir
-
 build CMakeFiles/Midware.dir/asm/vars.c.o: C_COMPILER__Midware_unscanned_Debug /home/ash/CLionProjects/Midware/asm/vars.c || cmake_object_order_depends_target_Midware
   DEP_FILE = CMakeFiles/Midware.dir/asm/vars.c.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -151,8 +145,8 @@ build CMakeFiles/Midware.dir/asm/gen_func.cpp.o: CXX_COMPILER__Midware_unscanned
   OBJECT_DIR = CMakeFiles/Midware.dir
   OBJECT_FILE_DIR = CMakeFiles/Midware.dir/asm
 
-build CMakeFiles/Midware.dir/Generating/Semantic_reader.cpp.o: CXX_COMPILER__Midware_unscanned_Debug /home/ash/CLionProjects/Midware/Generating/Semantic_reader.cpp || cmake_object_order_depends_target_Midware
-  DEP_FILE = CMakeFiles/Midware.dir/Generating/Semantic_reader.cpp.o.d
+build CMakeFiles/Midware.dir/Generating/Semantic_writer.cpp.o: CXX_COMPILER__Midware_unscanned_Debug /home/ash/CLionProjects/Midware/Generating/Semantic_writer.cpp || cmake_object_order_depends_target_Midware
+  DEP_FILE = CMakeFiles/Midware.dir/Generating/Semantic_writer.cpp.o.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/Midware.dir
   OBJECT_FILE_DIR = CMakeFiles/Midware.dir/Generating
@@ -163,6 +157,12 @@ build CMakeFiles/Midware.dir/asm/exprs.cpp.o: CXX_COMPILER__Midware_unscanned_De
   OBJECT_DIR = CMakeFiles/Midware.dir
   OBJECT_FILE_DIR = CMakeFiles/Midware.dir/asm
 
+build CMakeFiles/Midware.dir/Generating/StreamWriter.cpp.o: CXX_COMPILER__Midware_unscanned_Debug /home/ash/CLionProjects/Midware/Generating/StreamWriter.cpp || cmake_object_order_depends_target_Midware
+  DEP_FILE = CMakeFiles/Midware.dir/Generating/StreamWriter.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Midware.dir
+  OBJECT_FILE_DIR = CMakeFiles/Midware.dir/Generating
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Midware
@@ -171,7 +171,7 @@ build CMakeFiles/Midware.dir/asm/exprs.cpp.o: CXX_COMPILER__Midware_unscanned_De
 #############################################
 # Link the executable Midware
 
-build Midware: CXX_EXECUTABLE_LINKER__Midware_Debug CMakeFiles/Midware.dir/main.cpp.o CMakeFiles/Midware.dir/Lexical/LexicalAnalysis.cpp.o CMakeFiles/Midware.dir/IO/Reader.cpp.o CMakeFiles/Midware.dir/IO/Writer.cpp.o CMakeFiles/Midware.dir/IO/Colored.cpp.o CMakeFiles/Midware.dir/Lexical/escape_chars.cpp.o CMakeFiles/Midware.dir/Lexical/Lexem.cpp.o CMakeFiles/Midware.dir/Syntax/LexicalAnalysisReader.cpp.o CMakeFiles/Midware.dir/Syntax/Syntax.cpp.o CMakeFiles/Midware.dir/Semantic/Semantic.cpp.o CMakeFiles/Midware.dir/Semantic/Scoped_set.cpp.o CMakeFiles/Midware.dir/Semantic/expression.cpp.o CMakeFiles/Midware.dir/Semantic/var_data.cpp.o CMakeFiles/Midware.dir/df.cpp.o CMakeFiles/Midware.dir/asm/vars.c.o CMakeFiles/Midware.dir/asm/gen_switch.cpp.o CMakeFiles/Midware.dir/asm/gen_func.cpp.o CMakeFiles/Midware.dir/Generating/Semantic_reader.cpp.o CMakeFiles/Midware.dir/asm/exprs.cpp.o
+build Midware: CXX_EXECUTABLE_LINKER__Midware_Debug CMakeFiles/Midware.dir/main.cpp.o CMakeFiles/Midware.dir/Lexical/LexicalAnalysis.cpp.o CMakeFiles/Midware.dir/IO/Reader.cpp.o CMakeFiles/Midware.dir/IO/Writer.cpp.o CMakeFiles/Midware.dir/IO/Colored.cpp.o CMakeFiles/Midware.dir/Lexical/escape_chars.cpp.o CMakeFiles/Midware.dir/Lexical/Lexem.cpp.o CMakeFiles/Midware.dir/Syntax/LexicalAnalysisReader.cpp.o CMakeFiles/Midware.dir/Syntax/Syntax.cpp.o CMakeFiles/Midware.dir/Semantic/Semantic.cpp.o CMakeFiles/Midware.dir/Semantic/Scoped_set.cpp.o CMakeFiles/Midware.dir/Semantic/expression.cpp.o CMakeFiles/Midware.dir/Semantic/var_data.cpp.o CMakeFiles/Midware.dir/asm/vars.c.o CMakeFiles/Midware.dir/asm/gen_switch.cpp.o CMakeFiles/Midware.dir/asm/gen_func.cpp.o CMakeFiles/Midware.dir/Generating/Semantic_writer.cpp.o CMakeFiles/Midware.dir/asm/exprs.cpp.o CMakeFiles/Midware.dir/Generating/StreamWriter.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Midware.dir
   POST_BUILD = :

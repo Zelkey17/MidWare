@@ -15,8 +15,8 @@
 #include "../Syntax/LexicalAnalysisReader.h"
 
 
-struct Type{
-    int type=0;
+struct Type {
+    int type = 0;
     std::optional<std::string> ind;
 };
 
@@ -25,27 +25,29 @@ class Semantic {
 public:
     Semantic();
 
-    void import_(const std::string& lib);
-    void fail(){
-        _fail=true;
+    void import_(const std::string &lib);
+
+    void fail() {
+        _fail = true;
     }
-    void start_space(const std::string& space);
+
+    void start_space(const std::string &space);
 
     void end_space();
 
-    void create_gl_var(const std::string& basicString);
+    void create_gl_var(const std::string &basicString);
 
-    void start_func(const std::string &,spec sp={});
+    void start_func(const std::string &, spec sp = {});
 
     void start_func_body();
 
-    void main( std::string str);
+    void main(std::string str);
 
     void start_indexing();
 
     void end_indexing();
 
-    void forin(const std::string& basicString);
+    void forin(const std::string &basicString); //do this
 
     void forstart();
 
@@ -91,17 +93,17 @@ public:
 
     void end_struct();
 
-    void overload(const std::string& basicString, const std::vector<Type>& vector1);
+    void overload(const std::string &basicString, const std::vector<Type> &vector1);
 
-    void error(const std::string&);
+    void error(const std::string &);
 
-    LexicalAnalysisReader* lx;
+    LexicalAnalysisReader *lx;
 
     void end_func_body();
 
 private:
 
-    bool _fail=false;
+    bool _fail = false;
 
     std::set<type> types{};
     std::stack<std::set<func_data>> local_f{{}};

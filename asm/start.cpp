@@ -14,7 +14,9 @@ std::stringstream __start(const std::string& entry_name){
     std::stringstream ans;
     ans<<R"(
 .text
+
 .global _start
+
 __not_implemented_msg:
     .string "not implemented\n"
 __not_implemented:
