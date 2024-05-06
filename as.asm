@@ -22,8 +22,8 @@ h:
 
 print:
     mov $0x1, %rax
-    mov $0x1,%rdi
-    mov $4,%rdx
+    mov $0x1, %rdi
+    mov $4, %rdx
     syscall
     ret
 

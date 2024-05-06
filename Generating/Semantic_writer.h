@@ -2,8 +2,8 @@
 // Created by ash on 05.05.24.
 //
 
-#ifndef MIDWARE_SEMANTIC_READER_H
-#define MIDWARE_SEMANTIC_READER_H
+#ifndef MIDWARE_SEMANTIC_WRITER_H
+#define MIDWARE_SEMANTIC_WRITER_H
 
 #include<vector>
 #include <string>
@@ -23,7 +23,7 @@ enum SPR{
 };
 
 
-class Semantic_reader {
+class Semantic_writer {
 
 public:
 
@@ -33,10 +33,12 @@ public:
 
     void add_func_over();
 
+
+
     pbds::gp_hash_table<std::string,size_t> types;
 
 
 };
 
 
-#endif //MIDWARE_SEMANTIC_READER_H
+#endif //MIDWARE_SEMANTIC_WRITER_H
